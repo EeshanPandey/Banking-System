@@ -11,7 +11,7 @@ var mongoose  = require("mongoose");
 //mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true, useUnifiedTopology: true});
 //this is the local database environment
 //this is for the heroku production environment
-//mongoose.connect("mongodb+srv://eeshan22:pandey123@cluster0-obntj.mongodb.net/yelp_camp?retryWrites=true&w=majority", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://eeshan22:pandey123@cluster0-obntj.mongodb.net/yelp_camp?retryWrites=true&w=majority", {useNewUrlParser: true});
 
 
 //const DB_url = process.env.DB_url || "mongodb://localhost:27017/bank_app";
@@ -31,7 +31,7 @@ var customerSchema = new mongoose.Schema({
 
 var Customer = mongoose.model("Customer", customerSchema);
 
-mongoose.connect("mongodb+srv://eeshan22:pandey123@cluster0-obntj.mongodb.net/yelp_camp?retryWrites=true&w=majority", {useNewUrlParser: true});
+//mongoose.connect("mongodb+srv://eeshan22:pandey123@cluster0-obntj.mongodb.net/yelp_camp?retryWrites=true&w=majority", {useNewUrlParser: true});
 // Customer.updateOne({name:"Eeshan"},{name: "Eeshan Pandey"}, function(err, changed){
 // 	if(err){
 // 		console.log(err);
