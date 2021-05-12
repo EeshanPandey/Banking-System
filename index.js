@@ -9,12 +9,12 @@ var mongoose  = require("mongoose");
 //after doing in terminal export DATABASEURL=mongodb://localhost:
 //27017/yelp_camp
 //mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true, useUnifiedTopology: true});
-
 //this is the local database environment
-
 //this is for the heroku production environment
+//mongoose.connect("mongodb+srv://eeshan22:pandey123@cluster0-obntj.mongodb.net/yelp_camp?retryWrites=true&w=majority", {useNewUrlParser: true});
 
-const DB_url = process.env.DB_url || "mongodb://localhost:27017/bank_app";
+
+//const DB_url = process.env.DB_url || "mongodb://localhost:27017/bank_app";
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.set("view engine", "ejs");
@@ -30,6 +30,7 @@ var customerSchema = new mongoose.Schema({
 });
 
 var Customer = mongoose.model("Customer", customerSchema);
+
 mongoose.connect("mongodb+srv://eeshan22:pandey123@cluster0-obntj.mongodb.net/yelp_camp?retryWrites=true&w=majority", {useNewUrlParser: true});
 // Customer.updateOne({name:"Eeshan"},{name: "Eeshan Pandey"}, function(err, changed){
 // 	if(err){
