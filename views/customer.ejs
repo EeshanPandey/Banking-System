@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+		
+		
+		<style>
+			
+			body{
+			background-color: rgb(211,211,211);
+			}
+			
+			.customer{
+				background-color: white;
+				margin-top: 30px;
+				width : 350px;
+				border: 2px solid red;
+				padding: 10px;
+				border-radius: 10px;
+			}
+		
+		</style>
+	</head>
+	
+	<body>
+		
+		<div class = "container">
+			
+			<div class = "customer">
+				
+			
+			<h2 style="color:blue;">
+			<%= customer.name %>
+			</h2>
+			
+			<hr>
+			
+			<h3>
+				Bank Id: <%= customer.bank_id %>
+			</h3>
+			
+			<h3>
+				Mail Id: <%= customer.email %>
+			</h3>	
+			<h3>
+				Balance: <%= customer.balance %>
+			</h3>
+				
+			<br>
+			<a href="/customers/<%= customer._id %>/transaction" class="btn btn-success btn-lg">Pay</a>
+			
+			
+			
+		
+			</div>
+		
+		</div>
+		
+	</body>	
+	
+</html>	
