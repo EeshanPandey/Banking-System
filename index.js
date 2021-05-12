@@ -50,10 +50,10 @@ mongoose.connect("mongodb+srv://eeshan22:pandey123@cluster0-obntj.mongodb.net/ba
 // 	}
 // })
 Customer.create({
-	name: "Eeshan Pandey",
-	bank_id: 1,
-	email: "eeshan@gmail.com",
-	balance: 200
+	name: "Sanjay Sharma",
+	bank_id: 2,
+	email: "sanjay12@gmail.com",
+	balance: 400
 }, function(err, campground){
 	if(err){
 		console.log(err);
@@ -64,20 +64,112 @@ Customer.create({
 	}
 })
 
-// Customer.create({
-// 	name:"Kapil Jha",
-// 	bank_id: 7,
-// 	email: "kapil99@gmail.com",
-// 	balance: 1000
-// }, function(serr, campground){
-// 	if(err){
-// 		console.log(err);
-// 	}
-// 	else{
-// 		console.log("Newly created");
-// 		console.log(campground);
-// 	}
-// })
+Customer.create({
+	name: "Kevin Jones",
+	bank_id: 3,
+	email: "kjones@gmail.com",
+	balance: 500
+}, function(err, campground){
+	if(err){
+		console.log(err);
+	}
+	else{
+		//console.log("Newly created");
+		console.log(campground);
+	}
+})
+
+Customer.create({
+	name: "John Cena",
+	bank_id: 4,
+	email: "john33@gmail.com",
+	balance: 980
+}, function(err, campground){
+	if(err){
+		console.log(err);
+	}
+	else{
+		//console.log("Newly created");
+		console.log(campground);
+	}
+})
+
+Customer.create({
+	name: "Abhishek Ojha",
+	bank_id: 5,
+	email: "Abhishek@gmail.com",
+	balance: 880
+}, function(err, campground){
+	if(err){
+		console.log(err);
+	}
+	else{
+		//console.log("Newly created");
+		console.log(campground);
+	}
+})
+
+Customer.create({
+	name: "Kumar Raj",
+	bank_id: 6,
+	email: "Rajkkk.com",
+	balance: 500
+}, function(err, campground){
+	if(err){
+		console.log(err);
+	}
+	else{
+		//console.log("Newly created");
+		console.log(campground);
+	}
+})
+
+Customer.create({
+	name: "Ravi Jackson",
+	bank_id: 7,
+	email: "billiejean@gmail.com",
+	balance: 100
+}, function(err, campground){
+	if(err){
+		console.log(err);
+	}
+	else{
+		//console.log("Newly created");
+		console.log(campground);
+	}
+})
+
+
+Customer.create({
+	name:"Kapil Pandey",
+	bank_id: 8,
+	email: "kapil99@gmail.com",
+	balance: 1200
+}, function(serr, campground){
+	if(err){
+		console.log(err);
+	}
+	else{
+		console.log("Newly created");
+		console.log(campground);
+	}
+})
+
+Customer.create({
+	name: "Mark Plainview",
+	bank_id: 9,
+	email: "plainview2007@gmail.com",
+	balance: 1600
+}, function(err, campground){
+	if(err){
+		console.log(err);
+	}
+	else{
+		//console.log("Newly created");
+		console.log(campground);
+	}
+})
+
 
 
 app.get("/",function(req,res){
