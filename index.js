@@ -94,20 +94,20 @@ mongoose.connect("mongodb+srv://eeshan22:pandey123@cluster0-obntj.mongodb.net/ba
 // 	}
 // })
 
-// Customer.create({
-// 	name: "Abhishek Ojha",
-// 	bank_id: 5,
-// 	email: "Abhishek@gmail.com",
-// 	balance: 880
-// }, function(err, campground){
-// 	if(err){
-// 		console.log(err);
-// 	}
-// 	else{
-// 		//console.log("Newly created");
-// 		console.log(campground);
-// 	}
-// })
+Customer.create({
+	name: "Abhishek Ojha",
+	bank_id: 5,
+	email: "Abhishek@gmail.com",
+	balance: 880
+}, function(err, campground){
+	if(err){
+		console.log(err);
+	}
+	else{
+		//console.log("Newly created");
+		console.log(campground);
+	}
+})
 
 // Customer.create({
 // 	name: "Kumar Raj",
@@ -139,36 +139,36 @@ mongoose.connect("mongodb+srv://eeshan22:pandey123@cluster0-obntj.mongodb.net/ba
 // 	}
 // })
 
-Customer.create({
-	name: "Kapil Pandey",
-	bank_id: 8,
-	email: "Sharmak@gmail.com",
-	balance: 1200
-}, function(err, campground){
-	if(err){
-		console.log(err);
-	}
-	else{
-		//console.log("Newly created");
-		console.log(campground);
-	}
-})
+// Customer.create({
+// 	name: "Kapil Pandey",
+// 	bank_id: 8,
+// 	email: "Sharmak@gmail.com",
+// 	balance: 1200
+// }, function(err, campground){
+// 	if(err){
+// 		console.log(err);
+// 	}
+// 	else{
+// 		//console.log("Newly created");
+// 		console.log(campground);
+// 	}
+// })
 
 
-Customer.create({
-	name: "Mark Plainview",
-	bank_id: 9,
-	email: "plainview2007@gmail.com",
-	balance: 1600
-}, function(err, campground){
-	if(err){
-		console.log(err);
-	}
-	else{
-		//console.log("Newly created");
-		console.log(campground);
-	}
-})
+// Customer.create({
+// 	name: "Mark Plainview",
+// 	bank_id: 9,
+// 	email: "plainview2007@gmail.com",
+// 	balance: 1600
+// }, function(err, campground){
+// 	if(err){
+// 		console.log(err);
+// 	}
+// 	else{
+// 		//console.log("Newly created");
+// 		console.log(campground);
+// 	}
+// })
 
 
 
