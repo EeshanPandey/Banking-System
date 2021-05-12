@@ -4,7 +4,17 @@ var bodyParser = require("body-parser");
 var mongoose  = require("mongoose");
 
 
-mongoose.connect("mongodb://localhost:27017/bank_app", {useNewUrlParser: true});
+//mongoose.connect("mongodb://localhost:27017/bank_app", {useNewUrlParser: true, useUnifiedTopology: true});
+
+//after doing in terminal export DATABASEURL=mongodb://localhost:
+//27017/yelp_camp
+//mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true, useUnifiedTopology: true});
+
+//this is the local database environment
+mongoose.connect("mongodb+srv://eeshan22:pandey123@cluster0-obntj.mongodb.net/yelp_camp?retryWrites=true&w=majority", {useNewUrlParser: true});
+//this is for the heroku production environment
+
+const DB_url = process.env.DB_url || "mongodb://localhost:27017/bank_app";
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.set("view engine", "ejs");
