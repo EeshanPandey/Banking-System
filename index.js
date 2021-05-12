@@ -49,20 +49,20 @@ mongoose.connect("mongodb+srv://eeshan22:pandey123@cluster0-obntj.mongodb.net/ba
 // 		console.log(changed);
 // 	}
 // })
-// Customer.create({
-// 	name: "Pankaj Yadav",
-// 	bank_id: 9,
-// 	email: "pankaj@gmail.com",
-// 	balance: 1200
-// }, function(err, campground){
-// 	if(err){
-// 		console.log(err);
-// 	}
-// 	else{
-// 		console.log("Newly created");
-// 		console.log(campground);
-// 	}
-// })
+Customer.create({
+	name: "Eeshan Pandey",
+	bank_id: 1,
+	email: "eeshan@gmail.com",
+	balance: 200
+}, function(err, campground){
+	if(err){
+		console.log(err);
+	}
+	else{
+		//console.log("Newly created");
+		console.log(campground);
+	}
+})
 
 // Customer.create({
 // 	name:"Kapil Jha",
