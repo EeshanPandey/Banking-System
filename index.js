@@ -28,7 +28,7 @@ var customerSchema = new mongoose.Schema({
 	email: String,
 	balance: Number
 });
-ss
+
 var Customer = mongoose.model("Customer", customerSchema);
 
 mongoose.connect("mongodb+srv://eeshan22:pandey123@cluster0-obntj.mongodb.net/bank_app?retryWrites=true&w=majority", {useNewUrlParser: true});
@@ -94,20 +94,20 @@ mongoose.connect("mongodb+srv://eeshan22:pandey123@cluster0-obntj.mongodb.net/ba
 // 	}
 // })
 
-Customer.create({
-	name: "Abhishek Ojha",
-	bank_id: 5,
-	email: "Abhishek@gmail.com",
-	balance: 880
-}, function(err, campground){
-	if(err){
-		console.log(err);
-	}
-	else{
-		//console.log("Newly created");
-		console.log(campground);
-	}
-})
+// Customer.create({
+// 	name: "Abhishek Ojha",
+// 	bank_id: 5,
+// 	email: "Abhishek@gmail.com",
+// 	balance: 880
+// }, function(err, campground){
+// 	if(err){
+// 		console.log(err);
+// 	}
+// 	else{
+// 		//console.log("Newly created");
+// 		console.log(campground);
+// 	}
+// })
 
 // Customer.create({
 // 	name: "Kumar Raj",
