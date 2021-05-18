@@ -28,7 +28,7 @@ var customerSchema = new mongoose.Schema({
 	email: String,
 	balance: Number
 });
-
+ss
 var Customer = mongoose.model("Customer", customerSchema);
 
 mongoose.connect("mongodb+srv://eeshan22:pandey123@cluster0-obntj.mongodb.net/bank_app?retryWrites=true&w=majority", {useNewUrlParser: true});
